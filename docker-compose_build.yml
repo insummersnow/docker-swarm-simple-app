@@ -1,0 +1,7 @@
+version: "3"
+services:
+    spring-boot:
+        image: simple_spring-boot:${SIMPLE_APP_VERSION}
+        build: .
+        volumes:
+          - ./logs:/app/spring-boot/logs

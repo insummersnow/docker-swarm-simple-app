@@ -1,0 +1,26 @@
+2020-03-12 07:54:29.066  INFO 1 --- [main] base.app.config.Application              : Starting Application on e4e1e47d02ab with PID 1 (/app/spring-boot/build/libs/spring-boot.jar started by root in /app/spring-boot/build/libs)
+2020-03-12 07:54:29.155  INFO 1 --- [main] base.app.config.Application              : No active profile set, falling back to default profiles: default
+2020-03-12 07:54:40.130  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10001 (http)
+2020-03-12 07:54:40.353  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-12 07:54:40.403  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-12 07:54:40.848  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-12 07:54:40.934 DEBUG 1 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-03-12 07:54:40.952  INFO 1 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10832 ms
+2020-03-12 07:54:43.461  INFO 1 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-12 07:54:43.578 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-03-12 07:54:44.006 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2020-03-12 07:54:44.188 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-03-12 07:54:44.259 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-03-12 07:54:45.479  INFO 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2020-03-12 07:54:46.020  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10001 (http) with context path ''
+2020-03-12 07:54:46.041  INFO 1 --- [main] base.app.config.Application              : Started Application in 21.797 seconds (JVM running for 24.2)
+2020-03-12 07:54:55.086  INFO 1 --- [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-12 07:54:55.118  INFO 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-12 07:54:55.119 DEBUG 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-03-12 07:54:55.131 DEBUG 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-03-12 07:54:55.134  INFO 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-03-12 07:54:55.151 DEBUG 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/health", parameters={}
+2020-03-12 07:54:55.216 DEBUG 1 --- [http-nio-10001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/vnd.spring-boot.actuator.v3+json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-03-12 07:54:55.280 DEBUG 1 --- [http-nio-10001-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [org.springframework.boot.actuate.health.SystemHealth@79fad0d6]
+2020-03-12 07:54:55.305 DEBUG 1 --- [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-03-12 07:58:29.088  INFO 1 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

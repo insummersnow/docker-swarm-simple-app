@@ -1,0 +1,18 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+  spring-boot:
+      image: simple_spring-boot:1.0.1
+      ports:
+        - 10001:10001
+      volumes:
+        - ./libs:/app/spring-boot/libs
+        - ./logs:/app/spring-boot/logs
+      deploy:
+        mode: replicated
+        replicas: 6
